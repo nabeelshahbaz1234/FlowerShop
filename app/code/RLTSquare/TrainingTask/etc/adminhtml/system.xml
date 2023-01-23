@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="custom_tab" translate="label" sortOrder="300">
+            <label>Custom Tab</label>
+        </tab>
+        <section id="customer_shop" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Flower Bucket Shop</label>
+            <tab>custom_tab</tab>
+            <resource>RLTSquare_TrainingTask::custommodule</resource>
+            <group id="flower" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Custom Options</label>
+                <field id="get_customer_list" translate="label" type="multiselect" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Customer Groups</label>
+                    <source_model>RLTSquare\TrainingTask\Model\Adminhtml\System\Config\Source\Customer\Group</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

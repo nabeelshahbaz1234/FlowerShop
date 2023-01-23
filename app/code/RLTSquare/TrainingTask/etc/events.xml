@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+
+    <event name="sales_model_service_quote_submit_before">
+        <observer name="rltsquare_customfield_sales_model_service_quote_submit_before"
+                  instance="RLTSquare\TrainingTask\Observer\SaveOrderBeforeSalesModelQuote"/>
+    </event>
+
+</config>
